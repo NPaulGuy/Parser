@@ -7,7 +7,7 @@
 			throw new \Exception("Bad request!");
 		} else if($_POST['success'] == true) {
 			// Выполнение загрузки
-			$session_destroy();
+			session_destroy();
 			echo json_encode(array("statusCode" => 200));
 		}
 	} catch (\Exception $e) {
