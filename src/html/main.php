@@ -8,8 +8,6 @@
 </head>
 <body>
 <div style="margin: auto;width: 60%;">
-	<!--<button type="button" class="btn btn-success btn-sm" id="register">Register page</button>
-	<button type="button" class="btn btn-success btn-sm" id="login">Login page</button>-->
 	<form id="parserForm" name="parserForm" method="post">
 		<div class="form-group">
 			<label for="pwd" class="error-label" id="articleError" style="color: red" ></label><br>
@@ -47,21 +45,6 @@
 
 <script>
 	$(document).ready(function() {
-		/*$('#beginName').on('click', function() {
-			if ( this.checked ) {
-				$('#endName').attr("disabled", true);
-			} else {
-				$('#endName').attr("disabled", false);
-			}
-			
-		});
-		$('#endName').on('click', function() {
-			if ( this.checked ) {
-				$('#beginName').attr("disabled", true);
-			} else {
-				$('#beginName').attr("disabled", false);
-			}
-		});*/
 		$('#btnparse').on('click', function() {
 			var productArticle = $('#productArticle').val();
 			var productName = $('#productName').val();
