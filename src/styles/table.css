@@ -1,0 +1,35 @@
+table.scroll {
+	border-spacing: 0;
+	border: 2px solid black;
+	width: 1300px;
+	margin-left: auto;
+	margin-top: auto;
+}
+
+table.scroll tbody,
+table.scroll thead { display: block; }
+
+thead tr th { 
+	height: 40px;
+	line-height: 40px;
+	width: 300px;
+	text-align: left !important;
+}
+
+table.scroll tbody {
+	height: 100px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+tbody { border-top: 2px solid black; }
+
+tbody td, thead th {
+	border-right: 2px solid black;
+	border-bottom: 1px solid black;
+	width: 300px;
+}
+
+tbody td:last-child, thead th:last-child {
+	border-right: none;
+}
