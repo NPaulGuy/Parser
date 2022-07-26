@@ -8,8 +8,6 @@
 </head>
 <body>
 <div style="margin: auto;width: 60%;">
-	<!--<button type="button" class="btn btn-success btn-sm" id="register">Register page</button>
-	<button type="button" class="btn btn-success btn-sm" id="login">Login page</button>-->
 	<form id="parserForm" name="parserForm" method="post">
 		<div class="form-group">
 			<label id="labelInfo" name="labelInfo" for="pwd">Data is ready for loading.</label><br>
@@ -38,10 +36,6 @@
 						$('#btnload').attr("disabled", true);
 						$('#labelInfo').text("Loading is successful!");
 					}
-					// если данные некорректны, то...
-					else {
-
-					}
 				} 
 			});
 		});
@@ -58,10 +52,6 @@
 					// если данные валидны, то...
 					if (typeof data.statusCode !== 'undefined' && data.statusCode == 200) {
 						location.href = "";
-					}
-					// если данные некорректны, то...
-					else {
-
 					}
 				} 
 			});
